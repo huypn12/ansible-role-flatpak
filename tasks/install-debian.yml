@@ -1,0 +1,19 @@
+---
+- name: Install libvirt
+  ansible.builtin.apt:
+    name: "{{ item }}"
+    state: latest
+  with_items:
+    - qemu-kvm
+    - libvirt-clients
+    - libvirt-daemon-system
+    - libvirt-daemon
+    - bridge-utils
+    - virtinst
+    - virt-manager
+
+- name: Enable libvirtd
+  ansible.builtin.systemd:
+    name: libvirtd
+    state: started
+    enabled: true

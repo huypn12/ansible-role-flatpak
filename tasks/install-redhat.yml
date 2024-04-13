@@ -1,0 +1,9 @@
+---
+- name: Install virtualization package groups
+  ansible.builtin.dnf:
+    name:
+      - "@Virtualization Client"
+      - "@Virtualization Hypervisor"
+      - "@Virtualization Platform"
+      - "@Virtualization Tools"
+    state: latest
