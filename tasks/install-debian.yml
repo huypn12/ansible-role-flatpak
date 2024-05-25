@@ -13,9 +13,13 @@
     - qemu-kvm
     - virtinst
     - virt-manager
+  become: yes
+  become_method: sudo
 
 - name: Enable libvirtd
   ansible.builtin.systemd:
     name: libvirtd
     state: started
     enabled: true
+  become: yes
+  become_method: sudo
