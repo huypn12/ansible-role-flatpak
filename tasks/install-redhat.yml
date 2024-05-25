@@ -7,3 +7,5 @@
       - "@Virtualization Platform"
       - "@Virtualization Tools"
     state: latest
+  become: yes
+  become_method: sudo
