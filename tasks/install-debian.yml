@@ -9,7 +9,7 @@
     - libvirt-clients
     - libvirt-daemon
     - libvirt-daemon-system
-    - qemu
+    - libosinfo-bin
     - qemu-kvm
     - virtinst
     - virt-manager
