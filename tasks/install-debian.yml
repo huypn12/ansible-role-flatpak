@@ -4,11 +4,13 @@
     name: "{{ item }}"
     state: latest
   with_items:
-    - qemu-kvm
-    - libvirt-clients
-    - libvirt-daemon-system
-    - libvirt-daemon
     - bridge-utils
+    - cpu-checker
+    - libvirt-clients
+    - libvirt-daemon
+    - libvirt-daemon-system
+    - qemu
+    - qemu-kvm
     - virtinst
     - virt-manager
 
