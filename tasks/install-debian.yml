@@ -1,4 +1,5 @@
 ---
+# ref: https://ubuntu.com/blog/kvm-hyphervisor
 - name: Install libvirt
   ansible.builtin.apt:
     name: "{{ item }}"
